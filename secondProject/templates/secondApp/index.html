@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h1>welcome to my first web dev home page</h1>
+<h2>{{ inject_here}}</h2>
+<!-- below is the method to use url name rather than hardcoded url-->
+<!-- below is called url template tagging -->
+<a href="{% url 'secondApp:access_records' %}">Help Page</a>
+</body>
+</html>

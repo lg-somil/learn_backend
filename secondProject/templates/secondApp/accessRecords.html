@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django level two</title>
+</head>
+<body>
+<h1>last accessed records</h1>
+<div>
+    {% if access_records %}
+    <table>
+        <thead>
+        <th> Site Name </th>
+        <th> Date Accessed </th>
+        </thead>
+        {% for acc in access_records%}
+        <tr>
+            <td> {{acc.name}} </td>
+            <td> {{acc.date}} </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p> could not fetch access records </p>
+    {% endif %}
+</div>
+</body>
+</html>
