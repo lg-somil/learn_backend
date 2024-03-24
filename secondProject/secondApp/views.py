@@ -48,3 +48,13 @@ def add_Webpage(request):
         return render(request, 'secondApp/fillWebpageForm.html', context={'form': form})
 
 
+def temp_inherit(request):
+    return render(request, 'secondApp/template_inheritance.html')
+
+def home(request):
+    return render(request, 'secondApp/home_sec_app.html')
+
+# code to start a repo
+# git remote add origin git@github.com:somilg1312/learn_backend.git
+# git branch -M main # creates a main and sets this as master branch
+# git push -u origin main pushes to origin and sets local main to point to origin main

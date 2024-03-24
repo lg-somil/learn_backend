@@ -19,7 +19,7 @@ from secondApp import views
 
 
 urlpatterns = [
-    # path('', views.index, name='index'),
-    path('', include('secondApp.urls')),
+    path('', views.index, name='index'),
+    path('secondApp/', include('secondApp.urls')),
     path('admin/', admin.site.urls)
 ]
